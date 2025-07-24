@@ -108,6 +108,8 @@ nav a {
 
 .cart-button{
     background-color: #E95A08;
+    color: #FFFFFF;
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     width: calc(100% - 35px);
@@ -170,6 +172,8 @@ nav a {
 /* Latest Deals Section */
 
 
+
+
 /* Bunch section */
 
 .join-bunch{
@@ -202,6 +206,36 @@ nav a {
     padding-top: 185px;
     color: #FFFFFF;
 }
+
+/* Footer section */
+
+.footer{
+    display: flex;
+    gap: 150px;
+}
+
+.useful-links-1-ul, .useful-links-2-ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.useful-links-1-ul a, .useful-links-2-ul a{
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+}
+
+.useful-links{
+    display: flex;
+    gap: 100px;
+}
+
+.footer-p{
+    color: gray;
+    font-size: 18px;
+}
+
+
 
 /* Mobile Responsive */
 
@@ -264,4 +298,24 @@ nav a {
         font-size: 14px;
     }
 
+    .footer{
+        flex-direction: column;
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .useful-links{
+        flex-direction: column;
+        justify-items: center;
+        gap: 0;
+    }
+
+    .footer-logo img, .footer-p{
+        justify-items: center;
+        gap: 0;
+    }
+
+    .social-icons{
+        justify-items: center;
+    }
 }
