@@ -146,6 +146,28 @@ nav a {
     text-align: center;
 }
 
+/* Badge section styles */
+
+.badge{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.badge-content-h1{
+    font-size: 36px;
+}
+
+.badge-image img{
+    width: 550px;
+    height: 400px;
+}
+
+.badge-content-ul{
+    font-size: 20px;
+}
+
+/* Latest Deals Section */
 
 
 
@@ -176,12 +198,29 @@ nav a {
 
     .banner-image{
         justify-items: center;
+        width: 100%;
     }
 
     .products-card-container{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
+
+    .badge{
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .badge-image img{
+        width: 100%;
+        justify-items: center;
+    }
+
+    .badge-content{
+        justify-items: center;
+    }
+
+
 
 
 }
