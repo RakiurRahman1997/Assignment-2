@@ -82,3 +82,38 @@ nav a {
 .banner-image{
     width: 100%;
 }
+
+.banner-content{
+    margin: 50px 0 0;
+}
+
+.fresh-flowers{
+    color: #E95A08;
+}
+
+.banner-content-h1{
+    font-size: 50px;
+}
+
+.banner-content-p{
+    font-size: 24px;
+    color: #000000;
+    opacity: 50%;
+}
+
+
+/* Mobile Responsive */
+
+/* Smaller Devices */
+
+@media screen and (max-width:576px) {
+    .home, .shop, .about{
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-right: -250px;
+}
+}
