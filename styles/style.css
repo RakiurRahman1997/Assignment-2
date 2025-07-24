@@ -87,7 +87,7 @@ nav a {
     margin: 50px 0 0;
 }
 
-.fresh-flowers{
+.fresh-flowers, .our{
     color: #E95A08;
 }
 
@@ -102,6 +102,53 @@ nav a {
 }
 
 
+
+
+/* Products Card Styles */
+
+.cart-button{
+    background-color: #E95A08;
+    border: none;
+    padding: 10px 20px;
+    width: calc(100% - 35px);
+    text-align: center;
+    justify-content: center;
+}
+
+.products-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px auto;
+    max-width: 1280px;
+    justify-content: center;
+    gap: 30px 20px;
+}
+
+.image-container{
+    text-align: center;
+    justify-content: center;
+}
+
+.products-card{
+    margin: 100px 0;
+}
+
+.products-card-h2{
+    font-size: 36px;
+}
+
+.products-card-p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.products-card-content{
+    text-align: center;
+}
+
+
+
+
 /* Mobile Responsive */
 
 /* Smaller Devices */
@@ -113,12 +160,28 @@ nav a {
 
     .navbar {
         display: flex;
-        justify-content: space-between;
-        margin-right: -250px;
+        justify-items: center;
     }
 
     .banner{
         flex-direction: column;
-        justify-content: center;
+        justify-items: center;
+        gap: 0;
+
     }
+
+    .banner-content{
+        justify-items: center;
+    }
+
+    .banner-image{
+        justify-items: center;
+    }
+
+    .products-card-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+
 }
